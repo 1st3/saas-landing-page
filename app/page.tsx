@@ -91,7 +91,7 @@ export default function LandingPage() {
             </div>
             <p className="mt-4 text-sm text-gray-500">No credit card required • 14-day free trial • Cancel anytime</p>
           </div>
-        </div>
+        </Container>
 
         {/* Hero Image */}
         <Container className="mt-16">
@@ -104,7 +104,7 @@ export default function LandingPage() {
               className="rounded-xl shadow-2xl border"
             />
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Features Section */}
@@ -176,7 +176,7 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Testimonials Section */}
@@ -269,7 +269,7 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Pricing Section */}
@@ -398,7 +398,7 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Final CTA Section */}
@@ -427,7 +427,7 @@ export default function LandingPage() {
             </div>
             <p className="mt-6 text-sm opacity-75">14-day free trial • No credit card required • Cancel anytime</p>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Footer */}
@@ -553,7 +553,7 @@ export default function LandingPage() {
               </Link>
             </div>
           </div>
-        </div>
+        </Container>
       </footer>
     </div>
   )
