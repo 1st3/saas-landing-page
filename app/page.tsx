@@ -29,46 +29,48 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <div className="flex items-center space-x-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-slate-800 to-slate-600">
-              <Building2 className="h-5 w-5 text-white" />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-slate-800 to-slate-600">
+                <Building2 className="h-5 w-5 text-white" />
+              </div>
+              <span className="text-xl font-bold">Willis Brown</span>
             </div>
-            <span className="text-xl font-bold">Willis Brown</span>
-          </div>
 
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#about" className="text-sm font-medium hover:text-slate-600 transition-colors">
-              About
-            </Link>
-            <Link href="#portfolio" className="text-sm font-medium hover:text-slate-600 transition-colors">
-              Portfolio
-            </Link>
-            <Link href="#approach" className="text-sm font-medium hover:text-slate-600 transition-colors">
-              Our Approach
-            </Link>
-            <Link href="#contact" className="text-sm font-medium hover:text-slate-600 transition-colors">
-              Contact
-            </Link>
-          </nav>
+            <nav className="hidden md:flex items-center space-x-8">
+              <Link href="#about" className="text-sm font-medium hover:text-slate-600 transition-colors">
+                About
+              </Link>
+              <Link href="#portfolio" className="text-sm font-medium hover:text-slate-600 transition-colors">
+                Portfolio
+              </Link>
+              <Link href="#approach" className="text-sm font-medium hover:text-slate-600 transition-colors">
+                Our Approach
+              </Link>
+              <Link href="#contact" className="text-sm font-medium hover:text-slate-600 transition-colors">
+                Contact
+              </Link>
+            </nav>
 
-          <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="hidden md:inline-flex">
-              Investor Portal
-            </Button>
-            <Button className="bg-gradient-to-r from-slate-800 to-slate-600 hover:from-slate-900 hover:to-slate-700">
-              Get in Touch
-            </Button>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-5 w-5" />
-            </Button>
+            <div className="flex items-center space-x-4">
+              <Button variant="ghost" className="hidden md:inline-flex">
+                Investor Portal
+              </Button>
+              <Button className="bg-gradient-to-r from-slate-800 to-slate-600 hover:from-slate-900 hover:to-slate-700">
+                Get in Touch
+              </Button>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-gray-50 py-20 md:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <Badge className="mb-4 bg-slate-100 text-slate-700 hover:bg-slate-200">
               <MapPin className="h-3 w-3 mr-1" />
@@ -102,7 +104,7 @@ export default function LandingPage() {
         </div>
 
         {/* Trust Indicators */}
-        <div className="container px-4 md:px-6 mt-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-16">
           <div className="mx-auto max-w-4xl">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
               <div className="flex flex-col items-center text-center">
@@ -128,7 +130,7 @@ export default function LandingPage() {
 
       {/* About Section */}
       <section id="about" className="py-20 md:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
               Our Approach to Technology Investment
@@ -200,7 +202,7 @@ export default function LandingPage() {
 
       {/* Portfolio & Testimonials Section */}
       <section id="portfolio" className="py-20 md:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Trusted by Entrepreneurs</h2>
             <p className="text-lg text-gray-600">Hear from the founders and partners who work with Willis Brown</p>
@@ -293,7 +295,7 @@ export default function LandingPage() {
 
       {/* Our Approach Section */}
       <section id="approach" className="py-20 md:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
               Partnership Models That Work
@@ -416,7 +418,7 @@ export default function LandingPage() {
 
       {/* Final CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-slate-800 to-slate-600">
-        <div className="container px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center text-white">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
               Ready to build the future together?
@@ -445,7 +447,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
-        <div className="container px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
