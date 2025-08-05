@@ -58,7 +58,7 @@ export default function LandingPage() {
               <Menu className="h-5 w-5" />
             </Button>
           </div>
-        </div>
+        </Container>
       </header>
 
       {/* Hero Section */}
