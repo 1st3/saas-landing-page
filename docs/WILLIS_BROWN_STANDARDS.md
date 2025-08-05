@@ -230,6 +230,37 @@ app/
 - Responsive design compliance
 - SEO best practices
 
+## Deployment & Infrastructure
+
+### GitHub Pages Deployment
+- **Domain**: https://willis-brown.com
+- **Branch**: willis-brown (automatic deployment)
+- **Build Process**: Next.js static export via GitHub Actions
+- **Custom Domain**: Configured via CNAME file in public directory
+
+### GitHub Actions Configuration
+- **Workflow**: `.github/workflows/deploy.yml`
+- **Trigger**: Push to willis-brown branch
+- **Node Version**: 20+
+- **Package Manager**: pnpm
+- **Build Output**: Static export to `./out` directory
+- **Deployment**: Automatic to GitHub Pages
+
+### Next.js Configuration for Static Export
+```javascript
+const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  basePath: '',
+  // ... other config
+}
+```
+
+### DNS Configuration
+- Point your domain (willis-brown.com) to GitHub Pages
+- A records: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+- CNAME record: www.willis-brown.com → username.github.io
+
 ## Future Development
 
 ### Expansion Areas
