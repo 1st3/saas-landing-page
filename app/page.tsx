@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import {
   Check,
   Star,
-  Zap,
+  Building2,
   Shield,
   Users,
   BarChart3,
@@ -14,6 +14,12 @@ import {
   Linkedin,
   Github,
   Mail,
+  Code,
+  Globe,
+  TrendingUp,
+  Award,
+  MapPin,
+  ExternalLink,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -25,33 +31,33 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center space-x-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600">
-              <Zap className="h-5 w-5 text-white" />
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-slate-800 to-slate-600">
+              <Building2 className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold">StreamLine</span>
+            <span className="text-xl font-bold">Willis Brown</span>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#features" className="text-sm font-medium hover:text-blue-600 transition-colors">
-              Features
+            <Link href="#about" className="text-sm font-medium hover:text-slate-600 transition-colors">
+              About
             </Link>
-            <Link href="#testimonials" className="text-sm font-medium hover:text-blue-600 transition-colors">
-              Testimonials
+            <Link href="#portfolio" className="text-sm font-medium hover:text-slate-600 transition-colors">
+              Portfolio
             </Link>
-            <Link href="#pricing" className="text-sm font-medium hover:text-blue-600 transition-colors">
-              Pricing
+            <Link href="#approach" className="text-sm font-medium hover:text-slate-600 transition-colors">
+              Our Approach
             </Link>
-            <Link href="#contact" className="text-sm font-medium hover:text-blue-600 transition-colors">
+            <Link href="#contact" className="text-sm font-medium hover:text-slate-600 transition-colors">
               Contact
             </Link>
           </nav>
 
           <div className="flex items-center space-x-4">
             <Button variant="ghost" className="hidden md:inline-flex">
-              Sign In
+              Investor Portal
             </Button>
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              Start Free Trial
+            <Button className="bg-gradient-to-r from-slate-800 to-slate-600 hover:from-slate-900 hover:to-slate-700">
+              Get in Touch
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="h-5 w-5" />
@@ -61,60 +67,74 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-gray-50 py-20 md:py-32">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge className="mb-4 bg-blue-100 text-blue-700 hover:bg-blue-200">🚀 New: AI-Powered Automation</Badge>
+            <Badge className="mb-4 bg-slate-100 text-slate-700 hover:bg-slate-200">
+              <MapPin className="h-3 w-3 mr-1" />
+              Delaware Corporation • Stripe Atlas Partner
+            </Badge>
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              Streamline Your
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Building Tomorrow's
+              <span className="bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
                 {" "}
-                Workflow
+                Software
               </span>
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-600 md:text-xl">
-              Automate repetitive tasks, connect your favorite tools, and boost productivity by 10x. Join thousands of
-              teams already saving 20+ hours per week.
+              Willis Brown is a technology investment and development company that builds, acquires, and scales innovative 
+              SaaS solutions. We transform ideas into market-leading digital products.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-6"
+                className="bg-gradient-to-r from-slate-800 to-slate-600 hover:from-slate-900 hover:to-slate-700 text-lg px-8 py-6"
               >
-                Start Free Trial
+                View Our Portfolio
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent">
-                Watch Demo
+                Partner With Us
               </Button>
             </div>
-            <p className="mt-4 text-sm text-gray-500">No credit card required • 14-day free trial • Cancel anytime</p>
+            <p className="mt-4 text-sm text-gray-500">Trusted by entrepreneurs • Backed by experience • Built to scale</p>
           </div>
         </div>
 
-        {/* Hero Image */}
+        {/* Trust Indicators */}
         <div className="container px-4 md:px-6 mt-16">
-          <div className="mx-auto max-w-5xl">
-            <Image
-              src="/placeholder.svg?height=600&width=1000"
-              alt="StreamLine Dashboard"
-              width={1000}
-              height={600}
-              className="rounded-xl shadow-2xl border"
-            />
+          <div className="mx-auto max-w-4xl">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+              <div className="flex flex-col items-center text-center">
+                <Shield className="h-8 w-8 text-slate-600 mb-2" />
+                <p className="text-sm font-medium">Delaware Incorporated</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <Award className="h-8 w-8 text-slate-600 mb-2" />
+                <p className="text-sm font-medium">Stripe Atlas Partner</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <TrendingUp className="h-8 w-8 text-slate-600 mb-2" />
+                <p className="text-sm font-medium">Growth Focused</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <Code className="h-8 w-8 text-slate-600 mb-2" />
+                <p className="text-sm font-medium">Technology First</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="py-20 md:py-32">
+      {/* About Section */}
+      <section id="about" className="py-20 md:py-32">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
-              Everything you need to automate
+              Our Approach to Technology Investment
             </h2>
             <p className="text-lg text-gray-600">
-              Powerful features designed to streamline your workflow and boost team productivity
+              We combine strategic vision with technical expertise to build and scale software companies that matter
             </p>
           </div>
 
@@ -122,13 +142,13 @@ export default function LandingPage() {
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
-                  <Zap className="h-6 w-6 text-blue-600" />
+                  <Code className="h-6 w-6 text-blue-600" />
                 </div>
-                <CardTitle className="text-xl">Smart Automation</CardTitle>
+                <CardTitle className="text-xl">Product Development</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  AI-powered workflows that learn from your patterns and automate complex tasks without coding.
+                  Full-stack development capabilities from concept to deployment, using modern technologies and best practices.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -136,13 +156,13 @@ export default function LandingPage() {
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-green-100">
-                  <Shield className="h-6 w-6 text-green-600" />
+                  <TrendingUp className="h-6 w-6 text-green-600" />
                 </div>
-                <CardTitle className="text-xl">Enterprise Security</CardTitle>
+                <CardTitle className="text-xl">Growth Strategy</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Bank-level encryption, SSO integration, and compliance with SOC 2, GDPR, and HIPAA standards.
+                  Data-driven growth strategies, market analysis, and scalable business model optimization for long-term success.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -152,25 +172,25 @@ export default function LandingPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-100">
                   <Users className="h-6 w-6 text-purple-600" />
                 </div>
-                <CardTitle className="text-xl">Team Collaboration</CardTitle>
+                <CardTitle className="text-xl">Team Building</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Real-time collaboration tools, shared workspaces, and seamless handoffs between team members.
+                  Experienced leadership in assembling world-class teams and fostering cultures of innovation and excellence.
                 </CardDescription>
               </CardContent>
             </Card>
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100">
-                  <BarChart3 className="h-6 w-6 text-orange-600" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-slate-100">
+                  <Shield className="h-6 w-6 text-slate-600" />
                 </div>
-                <CardTitle className="text-xl">Advanced Analytics</CardTitle>
+                <CardTitle className="text-xl">Corporate Structure</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Detailed insights into workflow performance, bottlenecks, and optimization opportunities.
+                  Delaware incorporation with Stripe Atlas infrastructure ensures proper legal foundation and growth readiness.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -178,12 +198,12 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 md:py-32 bg-gray-50">
+      {/* Portfolio & Testimonials Section */}
+      <section id="portfolio" className="py-20 md:py-32 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Loved by teams worldwide</h2>
-            <p className="text-lg text-gray-600">See what our customers have to say about StreamLine</p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Trusted by Entrepreneurs</h2>
+            <p className="text-lg text-gray-600">Hear from the founders and partners who work with Willis Brown</p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
@@ -195,20 +215,20 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <blockquote className="text-lg mb-4">
-                  "StreamLine has transformed how our team works. We've automated 80% of our repetitive tasks and can
-                  now focus on what really matters."
+                  "Willis Brown's technical expertise and strategic guidance transformed our startup idea into a 
+                  market-ready SaaS platform. Their Delaware incorporation process was seamless."
                 </blockquote>
                 <div className="flex items-center">
                   <Image
-                    src="/placeholder.svg?height=40&width=40"
-                    alt="Sarah Chen"
+                    src="/placeholder-user.jpg"
+                    alt="Alexandra Kim"
                     width={40}
                     height={40}
                     className="rounded-full mr-3"
                   />
                   <div>
-                    <div className="font-semibold">Sarah Chen</div>
-                    <div className="text-sm text-gray-600">VP of Operations, TechCorp</div>
+                    <div className="font-semibold">Alexandra Kim</div>
+                    <div className="text-sm text-gray-600">Founder, CloudSync Pro</div>
                   </div>
                 </div>
               </CardContent>
@@ -222,20 +242,20 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <blockquote className="text-lg mb-4">
-                  "The ROI was immediate. We saved 25 hours per week in the first month alone. The platform is intuitive
-                  and powerful."
+                  "Working with Willis Brown gave us access to enterprise-level development capabilities we couldn't 
+                  afford on our own. They're true partners in growth."
                 </blockquote>
                 <div className="flex items-center">
                   <Image
-                    src="/placeholder.svg?height=40&width=40"
-                    alt="Marcus Rodriguez"
+                    src="/placeholder-user.jpg"
+                    alt="Michael Thompson"
                     width={40}
                     height={40}
                     className="rounded-full mr-3"
                   />
                   <div>
-                    <div className="font-semibold">Marcus Rodriguez</div>
-                    <div className="text-sm text-gray-600">CEO, StartupXYZ</div>
+                    <div className="font-semibold">Michael Thompson</div>
+                    <div className="text-sm text-gray-600">CEO, DataFlow Analytics</div>
                   </div>
                 </div>
               </CardContent>
@@ -249,20 +269,20 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <blockquote className="text-lg mb-4">
-                  "Game-changer for our agency. Client onboarding that used to take days now happens in hours.
-                  Incredible!"
+                  "From concept to scale, Willis Brown provided the infrastructure and expertise we needed. 
+                  Their portfolio approach creates incredible synergies."
                 </blockquote>
                 <div className="flex items-center">
                   <Image
-                    src="/placeholder.svg?height=40&width=40"
-                    alt="Emily Watson"
+                    src="/placeholder-user.jpg"
+                    alt="Jennifer Martinez"
                     width={40}
                     height={40}
                     className="rounded-full mr-3"
                   />
                   <div>
-                    <div className="font-semibold">Emily Watson</div>
-                    <div className="text-sm text-gray-600">Creative Director, DesignStudio</div>
+                    <div className="font-semibold">Jennifer Martinez</div>
+                    <div className="text-sm text-gray-600">Co-founder, TaskHub Solutions</div>
                   </div>
                 </div>
               </CardContent>
@@ -271,128 +291,122 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 md:py-32">
+      {/* Our Approach Section */}
+      <section id="approach" className="py-20 md:py-32">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
-              Simple, transparent pricing
+              Partnership Models That Work
             </h2>
             <p className="text-lg text-gray-600">
-              Choose the plan that's right for your team. Upgrade or downgrade at any time.
+              We offer flexible engagement models tailored to your needs and growth stage.
             </p>
           </div>
 
           <div className="grid gap-8 lg:grid-cols-3">
-            {/* Starter Plan */}
+            {/* Development Partnership */}
+            <Card className="border-2 hover:border-slate-200 transition-colors">
+              <CardHeader>
+                <CardTitle className="text-2xl">Development Partnership</CardTitle>
+                <CardDescription>Full-service product development and launch</CardDescription>
+                <div className="mt-4">
+                  <span className="text-2xl font-bold text-slate-600">Custom</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    End-to-end product development
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    Technical architecture & design
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    Delaware incorporation setup
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    Go-to-market strategy
+                  </li>
+                </ul>
+                <Button className="w-full bg-transparent" variant="outline">
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Investment Partnership */}
+            <Card className="border-2 border-slate-600 relative hover:border-slate-700 transition-colors">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-slate-600">Preferred</Badge>
+              <CardHeader>
+                <CardTitle className="text-2xl">Investment Partnership</CardTitle>
+                <CardDescription>Strategic investment with operational support</CardDescription>
+                <div className="mt-4">
+                  <span className="text-2xl font-bold text-slate-600">Equity Based</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    Capital investment
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    Technical team augmentation
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    Strategic guidance & mentorship
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    Network access & partnerships
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="h-5 w-5 text-green-600 mr-3" />
+                    Portfolio company synergies
+                  </li>
+                </ul>
+                <Button className="w-full bg-gradient-to-r from-slate-800 to-slate-600 hover:from-slate-900 hover:to-slate-700">
+                  Apply Now
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Acquisition */}
             <Card className="border-2 hover:border-blue-200 transition-colors">
               <CardHeader>
-                <CardTitle className="text-2xl">Starter</CardTitle>
-                <CardDescription>Perfect for small teams getting started</CardDescription>
+                <CardTitle className="text-2xl">Acquisition</CardTitle>
+                <CardDescription>Strategic acquisition of promising SaaS companies</CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$29</span>
-                  <span className="text-gray-600">/month</span>
+                  <span className="text-2xl font-bold text-slate-600">Market Rate</span>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Up to 5 team members
+                    Fair market valuation
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-600 mr-3" />
-                    100 automated workflows
+                    Founder retention options
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Basic integrations
+                    Enhanced growth resources
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Email support
+                    Portfolio integration benefits
                   </li>
                 </ul>
                 <Button className="w-full bg-transparent" variant="outline">
-                  Start Free Trial
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Professional Plan */}
-            <Card className="border-2 border-blue-600 relative hover:border-blue-700 transition-colors">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600">Most Popular</Badge>
-              <CardHeader>
-                <CardTitle className="text-2xl">Professional</CardTitle>
-                <CardDescription>Best for growing teams and businesses</CardDescription>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold">$99</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Up to 25 team members
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Unlimited workflows
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Advanced integrations
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Priority support
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Advanced analytics
-                  </li>
-                </ul>
-                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  Start Free Trial
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Enterprise Plan */}
-            <Card className="border-2 hover:border-purple-200 transition-colors">
-              <CardHeader>
-                <CardTitle className="text-2xl">Enterprise</CardTitle>
-                <CardDescription>For large organizations with custom needs</CardDescription>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold">Custom</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Unlimited team members
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Custom integrations
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    Dedicated support
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    SLA guarantee
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="h-5 w-5 text-green-600 mr-3" />
-                    On-premise deployment
-                  </li>
-                </ul>
-                <Button className="w-full bg-transparent" variant="outline">
-                  Contact Sales
+                  Start Discussion
                 </Button>
               </CardContent>
             </Card>
@@ -401,30 +415,30 @@ export default function LandingPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 md:py-32 bg-gradient-to-r from-slate-800 to-slate-600">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-3xl text-center text-white">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-              Ready to streamline your workflow?
+              Ready to build the future together?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Join thousands of teams who have already transformed their productivity with StreamLine. Start your free
-              trial today and see the difference in just 24 hours.
+              Whether you're an entrepreneur with a vision, a founder looking to scale, or a SaaS company seeking strategic partnership, 
+              Willis Brown provides the expertise and resources to turn ideas into market leaders.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-6">
-                Start Free Trial
+              <Button size="lg" className="bg-white text-slate-800 hover:bg-gray-100 text-lg px-8 py-6">
+                Start a Conversation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-6 bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-slate-800 text-lg px-8 py-6 bg-transparent"
               >
-                Schedule Demo
+                View Portfolio
               </Button>
             </div>
-            <p className="mt-6 text-sm opacity-75">14-day free trial • No credit card required • Cancel anytime</p>
+            <p className="mt-6 text-sm opacity-75">Delaware Corporation • Trusted by Entrepreneurs • Built to Scale</p>
           </div>
         </div>
       </section>
@@ -435,13 +449,13 @@ export default function LandingPage() {
           <div className="grid gap-8 md:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600">
-                  <Zap className="h-5 w-5 text-white" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-slate-800 to-slate-600">
+                  <Building2 className="h-5 w-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">StreamLine</span>
+                <span className="text-xl font-bold">Willis Brown</span>
               </div>
               <p className="text-gray-400">
-                Automate your workflow and boost productivity with our powerful automation platform.
+                A Delaware corporation focused on building and scaling innovative SaaS solutions through strategic investment and development.
               </p>
               <div className="flex space-x-4">
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -460,26 +474,26 @@ export default function LandingPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Product</h3>
+              <h3 className="font-semibold mb-4">Portfolio</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Features
+                    Current Holdings
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Integrations
+                    Investment Criteria
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    API
+                    Case Studies
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Security
+                    Portfolio Resources
                   </Link>
                 </li>
               </ul>
@@ -489,22 +503,22 @@ export default function LandingPage() {
               <h3 className="font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    About
+                  <Link href="/about" className="hover:text-white transition-colors">
+                    About Willis Brown
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Blog
+                    Leadership Team
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Careers
+                    Corporate Structure
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="/contact" className="hover:text-white transition-colors">
                     Contact
                   </Link>
                 </li>
@@ -512,26 +526,26 @@ export default function LandingPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Support</h3>
+              <h3 className="font-semibold mb-4">Partnership</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Help Center
+                    Work With Us
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Documentation
+                    Investment Process
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Status
+                    Development Services
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Community
+                    Strategic Advisory
                   </Link>
                 </li>
               </ul>
@@ -539,16 +553,16 @@ export default function LandingPage() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} StreamLine. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Willis Brown, LLC. Delaware Corporation. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Terms of Service
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Cookie Policy
+                Legal Disclosures
               </Link>
             </div>
           </div>

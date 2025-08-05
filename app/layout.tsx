@@ -4,9 +4,18 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Willis Brown - Technology Investment & Development Company',
+  description: 'Willis Brown is a Delaware-incorporated technology company specializing in SaaS development and digital innovation. Building tomorrow\'s software solutions today.',
+  generator: 'Next.js',
+  keywords: ['SaaS', 'technology', 'software development', 'Delaware corporation', 'digital innovation'],
+  authors: [{ name: 'Willis Brown' }],
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Willis Brown - Technology Investment & Development Company',
+    description: 'Delaware-incorporated technology company specializing in SaaS development and digital innovation.',
+    type: 'website',
+    locale: 'en_US',
+  },
 }
 
 export default function RootLayout({
