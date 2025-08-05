@@ -245,6 +245,7 @@ app/
 - **Package Manager**: pnpm
 - **Build Output**: Static export to `./out` directory
 - **Deployment**: Automatic to GitHub Pages
+- **Note**: Workflow is configured to trigger specifically on `willis-brown` branch pushes
 
 ### Next.js Configuration for Static Export
 ```javascript
