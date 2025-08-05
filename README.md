@@ -1,4 +1,4 @@
-# SaaS landing page
+# StreamLine - SaaS Landing Page
 
 *Automatically synced with your [v0.dev](https://v0.dev) deployments*
 
@@ -7,8 +7,13 @@
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+This repository contains the StreamLine SaaS landing page, built with Next.js 15+ and modern web technologies. The page features a responsive design with proper container centering and optimized for performance.
+
+### Key Features
+- **Responsive Design**: Optimized for all screen sizes
+- **Container System**: Consistent centering with reusable components
+- **Modern UI**: Built with Tailwind CSS and shadcn/ui components
+- **Performance**: Optimized for Next.js 15+ with App Router
 
 ## Deployment
 

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Container } from "@/components/ui/container"
 import {
   Check,
   Star,
@@ -23,7 +24,7 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+        <Container className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600">
               <Zap className="h-5 w-5 text-white" />
@@ -62,7 +63,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 md:py-32">
-        <div className="container px-4 md:px-6">
+        <Container>
           <div className="mx-auto max-w-4xl text-center">
             <Badge className="mb-4 bg-blue-100 text-blue-700 hover:bg-blue-200">🚀 New: AI-Powered Automation</Badge>
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
@@ -93,7 +94,7 @@ export default function LandingPage() {
         </div>
 
         {/* Hero Image */}
-        <div className="container px-4 md:px-6 mt-16">
+        <Container className="mt-16">
           <div className="mx-auto max-w-5xl">
             <Image
               src="/placeholder.svg?height=600&width=1000"
@@ -108,7 +109,7 @@ export default function LandingPage() {
 
       {/* Features Section */}
       <section id="features" className="py-20 md:py-32">
-        <div className="container px-4 md:px-6">
+        <Container>
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
               Everything you need to automate
@@ -180,7 +181,7 @@ export default function LandingPage() {
 
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 md:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <Container>
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Loved by teams worldwide</h2>
             <p className="text-lg text-gray-600">See what our customers have to say about StreamLine</p>
@@ -273,7 +274,7 @@ export default function LandingPage() {
 
       {/* Pricing Section */}
       <section id="pricing" className="py-20 md:py-32">
-        <div className="container px-4 md:px-6">
+        <Container>
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
               Simple, transparent pricing
@@ -402,7 +403,7 @@ export default function LandingPage() {
 
       {/* Final CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="container px-4 md:px-6">
+        <Container>
           <div className="mx-auto max-w-3xl text-center text-white">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
               Ready to streamline your workflow?
@@ -431,7 +432,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
-        <div className="container px-4 md:px-6">
+        <Container>
           <div className="grid gap-8 md:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
