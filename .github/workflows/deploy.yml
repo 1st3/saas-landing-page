@@ -43,18 +43,24 @@ jobs:
           path: |
             ~/.pnpm-store
             ${{ github.workspace }}/.next/cache
+            ${{ github.workspace }}/node_modules/.cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
+            ${{ runner.os }}-nextjs-
             
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --prefer-offline
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
         
       - name: Build with Next.js
-        run: pnpm build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
+        run: |
+          time pnpm build
+          echo "Build completed in $SECONDS seconds"
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
