@@ -1,35 +1,60 @@
-# StreamLine - SaaS Landing Page
+# StreamLine: SaaS landing page
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A clean, responsive landing page for a made-up SaaS product called StreamLine. Use it as a starting point for your own product page, or just to see how the pieces fit together.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/daniel-ss-projects-bb7eac7f/v0-saa-s-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/8NhzJ25wS63)
+**Live demo: https://landing-page-template.w-b.dev**
 
-## Overview
+## What's on the page
 
-This repository contains the StreamLine SaaS landing page, built with Next.js 15+ and modern web technologies. The page features a responsive design with proper container centering and optimized for performance.
+- A hero with a headline and calls to action
+- A features grid
+- Customer testimonials
+- Pricing tiers
+- A closing call to action and a footer with link columns
 
-### Key Features
-- **Responsive Design**: Optimized for all screen sizes
-- **Container System**: Consistent centering with reusable components
-- **Modern UI**: Built with Tailwind CSS and shadcn/ui components
-- **Performance**: Optimized for Next.js 15+ with App Router
+All the copy and images are placeholders. Swap in your own.
 
-## Deployment
+## Built with
 
-Your project is live at:
+- [Next.js](https://nextjs.org) 15 (App Router) and React 19
+- [Tailwind CSS](https://tailwindcss.com) for styling
+- [shadcn/ui](https://ui.shadcn.com) components on top of Radix UI
+- TypeScript
 
-**[https://vercel.com/daniel-ss-projects-bb7eac7f/v0-saa-s-landing-page](https://vercel.com/daniel-ss-projects-bb7eac7f/v0-saa-s-landing-page)**
+It started life in [v0](https://v0.dev) and has been tidied by hand since.
 
-## Build your app
+## Run it locally
 
-Continue building your app on:
+```bash
+pnpm install
+pnpm dev
+```
 
-**[https://v0.dev/chat/projects/8NhzJ25wS63](https://v0.dev/chat/projects/8NhzJ25wS63)**
+Then open http://localhost:3000.
 
-## How It Works
+To build the production site:
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+pnpm build
+pnpm start
+```
+
+## Project layout
+
+| Path | What lives there |
+|---|---|
+| `app/page.tsx` | The whole landing page, section by section |
+| `app/layout.tsx` | Page shell, fonts and metadata |
+| `components/ui/` | shadcn/ui building blocks, plus our `Container` |
+| `docs/CONTAINER_SYSTEM.md` | How the `Container` keeps every section centred and aligned |
+
+## Making it yours
+
+1. Edit the text and sections in `app/page.tsx`.
+2. Replace the files in `public/` with your own logo and images.
+3. Adjust colours and spacing in `tailwind.config.ts` and `app/globals.css`.
+
+## Notes
+
+- There are no secrets or environment variables to set up. It's a static page.
+- Type errors and lint warnings don't fail the build (see `next.config.mjs`). Tighten that if you build on top of this.
